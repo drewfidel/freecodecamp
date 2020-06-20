@@ -1,0 +1,94 @@
+<style type="text/css">
+nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.flex-headings {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: darkgrey;
+  border-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-boxes {
+  height: 280px;
+  width: 240px;
+  border: 1px solid black;
+  margin: 20px auto 20px auto;
+  border-radius: 5px;
+  background-color: white;
+}
+
+
+@media only screen and (max-width: 460px) {
+   #video {
+    width: 320px;
+    height: 210px; 
+    } 
+
+    img {
+      width: 100%;
+    }
+}
+
+
+
+</style>
+
+<header id="header">
+  <img src="https://yt3.ggpht.com/a/AATXAJz14ZPzRqz3EJ2VvEdsUahT2Gt77bB9N5Q6gQ=s900-c-k-c0xffffffff-no-rj-mo" alt="google logo" id="header-img">
+  <nav id="nav-bar">
+    <a class="nav-link" href="#features">Features</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#support">Support</a>
+  </nav>
+</header>
+
+<iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/eTFy8RnUkoU?autoplay=0">
+</iframe>
+
+<p id="Features">
+  <h3 class="text-center">Features</h3>
+  <div class="Features-section">
+
+    <div class="flex-container">
+
+      <div class="flex-box">
+        <h5 class="flex-heading">Maps</h5>
+        <p class="text-content">Driving Directions/Routing</p>
+        <p class="text-content">World Map</p>
+        <p class="text-content">Traffic Flow/ETA in Real-Time</p>
+      </div>
+
+      <div class="flex-box">
+        <h5 class="flex-heading">Products</h5>
+        <p class="text-content">Gmail</p>
+        <p class="text-content">Sheets</p>
+        <p class="text-content">Word/Powerpoint</p>
+      </div>
+
+      <div class="flex-box">
+        <h5 class="flex-heading">Leading Search Engine</h5>
+        <p class="text-content">Fastest Search Queries</p>
+        <p class="text-content">Smart Searches</p>
+        <p class="text-content">Images/News/Maps/etc</p>
+      </div>
+    </div>
+  </div>
+</p>
+
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <label for="email">Join our mailing list for more upcoming features and information</label>
+  <input type="email" id="email" name="name" placeholder="Enter your email">
+  <label for="submit"></label>
+  <input type="submit" name="submit" placeholder="Submit">
+</form>

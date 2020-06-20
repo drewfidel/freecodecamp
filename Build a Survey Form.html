@@ -1,0 +1,83 @@
+<style type="text/css">
+	h1 {
+  text-align: center;
+}
+
+div {
+  margin-top: 1em;
+}
+
+form {
+  margin: 0 auto;  
+  width: 70%;
+  /* To see the limits of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+#main {
+  background-color: lightgoldenrodyellow;
+}
+
+</style>
+
+<div>
+	<h1 id="title">Welcome to the Survey Form</h1>
+	<p>description here</p>
+	<form>
+		<div>
+			<label id="name-label" for="name">Name:</label>
+			<input type="text" name="name" id="name" required placeholder="Enter name here">		
+		</div>
+		<div>
+			<label id="email-label" for="email">Email:</label>
+			<input type="email" name="email" id="email" required placeholder="Enter email here">
+		</div>	
+		<div>
+			<label id="number-label" for="number">Enter phone number:</label>
+			<input type="number" name="number" id="number" placeholder="Enter number here" min="1" max="9">
+		</div>
+
+		<div>
+			<label>What is your gender</label>
+			<select id="dropdown">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="working">Working</label>
+			<input type="radio" id="working" name="occupation" value="working">
+			<label for="not working">Not Working</label>
+			<input type="radio" id="not working" name="occupation" value="not working">
+		</div>
+
+		<div>
+			<label for="U.S Citizen">U.S Citizen</label>
+			<input type="checkbox" id="U.S Citizen" name="U.S Citizen" value="Yes">
+			<label for="Non U.S Citizen">Non U.S Citizen</lael>
+			<input type="checkbox" id="Non U.S Citizen" name="Non U.S Citizen">
+		</div>
+
+		<div>
+			<textarea name="comment">Enter any additional comments:</textarea>
+		</div>
+		<input type="submit" name="">
+	</form>
+  	
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
